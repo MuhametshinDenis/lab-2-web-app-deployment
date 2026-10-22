@@ -1,0 +1,7 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types", "env.d.ts"],
+    "paths": { "@/*": ["./src/*"] }
+  }
+}

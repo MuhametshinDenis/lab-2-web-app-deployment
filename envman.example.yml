@@ -1,0 +1,48 @@
+variables:
+  # ==========================================================================
+  # Shared / reference-only
+  # ==========================================================================
+  shared:
+    domain:
+      name: DOMAIN
+      value: ""
+      scope: []
+
+  # ==========================================================================
+  # Database
+  # ==========================================================================
+  database:
+    username:
+      name: DATABASE_USERNAME
+      value: username
+      scope: [ infra, server ]
+
+    password:
+      name: DATABASE_PASSWORD
+      value:
+      scope: [ infra, server ]
+
+    host:
+      name: DATABASE_HOST
+      value: database
+      scope: [ infra, server ]
+
+    port:
+      name: DATABASE_PORT
+      value: 5432
+      scope: [ infra, server ]
+
+    name:
+      name: DATABASE_NAME
+      value: postgres
+      scope: [infra, server]
+
+  # ==========================================================================
+  # Application
+  # ==========================================================================
+  application:
+    server:
+      url:
+        name: VITE_APPLICATION_SERVER_URL
+        value: "https://${DOMAIN}"
+        scope: [ client ]

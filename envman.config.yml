@@ -1,0 +1,4 @@
+targets:
+    server: server/.env
+    infra: infra/.env
+    client: client/.env

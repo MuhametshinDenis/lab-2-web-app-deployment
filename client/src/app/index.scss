@@ -1,0 +1,78 @@
+:root {
+  color: #17211b;
+  background: #f3f4ec;
+  font-family: Inter, Avenir, 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #f3f4ec;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgb(67 107 83 / 20%);
+  outline-offset: 2px;
+}
+
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app-shell__glow {
+  position: fixed;
+  z-index: -1;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 50%;
+  filter: blur(3px);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.app-shell__glow--top {
+  top: -18rem;
+  right: -10rem;
+  background: radial-gradient(circle, #c8dfbf 0%, rgb(200 223 191 / 0%) 68%);
+}
+
+.app-shell__glow--bottom {
+  bottom: -22rem;
+  left: -11rem;
+  background: radial-gradient(circle, #f2cba5 0%, rgb(242 203 165 / 0%) 68%);
+}
+
+::selection {
+  color: #fff;
+  background: #426b53;
+}

@@ -1,0 +1,12 @@
+.main-page {
+  width: min(100% - 32px, 780px);
+  margin: 0 auto;
+  padding: 56px 0 72px;
+}
+
+@media (width <= 640px) {
+  .main-page {
+    width: min(100% - 24px, 780px);
+    padding: 30px 0 48px;
+  }
+}

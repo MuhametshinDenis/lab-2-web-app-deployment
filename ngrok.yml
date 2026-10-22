@@ -1,0 +1,9 @@
+version: "3"
+
+endpoints:
+  - name: app
+    # Публичный URL ngrok
+    url:
+    upstream:
+      # Локальный URL приложения
+      url:
